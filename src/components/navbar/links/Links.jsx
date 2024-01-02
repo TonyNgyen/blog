@@ -5,7 +5,6 @@ import styles from "./links.module.css";
 import NavLink from "./navLink/navLink";
 import Image from "next/image";
 import { handleLogout } from "@/lib/actions";
-import { auth } from "@/lib/auth";
 
 const links = [
   {
@@ -26,7 +25,7 @@ const links = [
   },
 ];
 
-async function Links({session}) {
+function Links({session}) {
   const [open, setOpen] = useState(false);
 
   //TEMP
