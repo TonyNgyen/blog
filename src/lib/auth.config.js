@@ -29,12 +29,6 @@ export const authConfig = {
         return false
       }
 
-      // ONLY AUTHENTICATED USERS CAN REACH THE BLOG PAGE
-
-      if (isOnBlogPage && !user) {
-        return false
-      }
-
       // ONLY AUTHENTICATED USERS CAN REACH THE LOGIN PAGE
 
       if (isOnLoginPage && user) {
